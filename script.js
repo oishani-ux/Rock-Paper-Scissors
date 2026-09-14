@@ -56,12 +56,12 @@ function playRound(playerChoice) {
 
   if (winner === "you") {
     youScore = youScore + 1;
-    resultTextEl.textContent = "You chose " + playerChoice + ", computer chose " + computerChoice + ". You win this round!";
+    resultTextEl.textContent =  " You win this round!";
   } else if (winner === "computer") {
     computerScore = computerScore + 1;
-    resultTextEl.textContent = "You chose " + playerChoice + ", computer chose " + computerChoice + ". Computer wins this round!";
+    resultTextEl.textContent =  " Computer wins this round!";
   } else {
-    resultTextEl.textContent = "You chose " + playerChoice + ", computer chose " + computerChoice + ". It's a tie!";
+    resultTextEl.textContent = "It's a tie!";
   }
 
   updateScoreboard();
